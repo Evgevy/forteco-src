@@ -1,0 +1,54 @@
+mixin single-video()
+    section.single-video 
+        .single-video__content 
+            .single-video__inner 
+                h1.single-video__title Руководитель Правовой Помощи ЖКХ принял участие в прямом эфире передачи «Телекурьер» на канале «78»
+                p.single-video__date Дата: 06 февраля 2024 года 
+                .single-video__block 
+                    .single-video__video
+                        <video poster="img/content/poster.png" controls width="1280" height="721" class="single-video__video-desctop" id="myVideo">
+                            //- <source src="https://freetestdata.com/wp-content/uploads/2022/02/Free_Test_Data_2MB_MP4.mp4" type="video/mp4">
+                            <source src="">
+                        </video> 
+                        <video poster="img/content/poster-mobile.png" controls width="980" height="680" class="single-video__video-mobile" id="myVideo2">
+                            //- <source src="https://freetestdata.com/wp-content/uploads/2022/02/Free_Test_Data_2MB_MP4.mp4" type="video/mp4">
+                            <source src="">
+                        </video>
+                        .single-video__icon
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="32" transform="rotate(-180 32 32)" fill="#00AE00"/>
+                            <path d="M47 32L24.5 44.9904L24.5 19.0096L47 32Z" fill="white"/>
+                            </svg>
+                    p.single-video__block-text В редакцию программы обратились жители Херсонской улицы. Они сообщили, что УК – ООО «ЖКС №3 Центрального района» — запретила парковать авто в зоне платной парковки до апреля. По словам заявителей, об этом коммунальщики уведомили жителей в объявлениях, которые развесили на фасадах здания по всей улице. 
+                    p.single-video__block-text Люди говорят, что этим объявлением УК не только отменила парковки в зоне платных парковок, но еще и сняла с себя ответственность за падающую наледь и порчу движимого имущества, а так же освободила себя от работы. Жители рассказали, что автолюбители были неприятно удивлены таким самоуправством со стороны коммунальщиков. У многих куплены парковочные абонементы, то есть, потрачены деньги. Это первое. Второе – УК взимает средства с жильцов за услуги, которые тоже не выполняет.
+                .document__block-image.swiper-container
+                    .document__block-list.swiper-wrapper
+                        .document__block-item.swiper-slide
+                            a(href="img/content/doc1.png" data-fancybox="galary")
+                                img(src="img/content/doc1.png").document__block-img
+                        .document__block-item.swiper-slide
+                            a(href="img/content/doc1.png" data-fancybox="galary") 
+                                img(src="img/content/doc1.png").document__block-img
+                        .document__block-item.swiper-slide
+                            a(href="img/content/doc1.png" data-fancybox="galary")
+                                img(src="img/content/doc1.png").document__block-img
+                        .document__block-item.swiper-slide
+                            a(href="img/content/doc1.png" data-fancybox="galary") 
+                                img(src="img/content/doc1.png").document__block-img
+                .swiper-button-next
+                .swiper-button-prev 
+                h3.document__app-title Приложения
+                .document__app 
+                    .document__app-item 
+                        <svg width="24" height="31" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.599 0H0V30.75H24V8.42387L15.599 0ZM15.3333 8.69022V1.6033L22.401 8.69022H15.3333Z" fill="#00AE00"/>
+                        </svg>
+                        p.document__app-text Документ № 1
+                        a(href="" download).document__app-link Скачать
+                    .document__app-item 
+                        <svg width="24" height="31" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.599 0H0V30.75H24V8.42387L15.599 0ZM15.3333 8.69022V1.6033L22.401 8.69022H15.3333Z" fill="#00AE00"/>
+                        </svg>
+                        p.document__app-text Документ № 2
+                        a(href="" download).document__app-link Скачать
+        +news-block

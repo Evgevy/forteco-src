@@ -1,0 +1,216 @@
+.pairs {
+    background: rgb(248, 248, 248);
+
+    .articles-page__content {
+        max-width: 1420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px 70px;
+
+    }
+
+    .articles-page__inner {
+        max-width: 1280px;
+        width: 100%;
+    }
+
+    .articles-page__title {
+        color: rgb(0, 0, 0);
+        font-family: Oswald;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 140%;
+        padding-top: 20px;
+        margin: 0 0 40px;
+    }
+
+    .articles__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .service__item {
+        max-width: 320px;
+        width: 100%;
+        transition: .2s;
+        height: auto;
+        box-shadow: 4px 4px 40px rgba(145, 145, 145, 0.3);
+    }
+
+    li:hover {
+        transform: scale(0.98);
+        box-shadow: 0px 0px 20px rgba(145, 145, 145, 0.3);
+    }
+
+    .service__slide-link {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0px 0px 7px rgba(104, 98, 98, 0.5);
+        background: rgb(255, 255, 255);
+    }
+
+    .service__image {
+        height: 123px;
+        padding: 12px 8px 0;
+        margin-bottom: 20px;
+    }
+
+    .service__slide-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 40px;
+        margin-bottom: 0;
+    }
+
+    .service__slide-title {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 140%;
+        margin: 0 0 10px;
+    }
+
+    .service__slide-text {
+        color: rgb(128, 128, 128);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0 0 30px;
+    }
+
+    .service__slide-phone,
+    .service__slide-email {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+        margin: 0;
+
+        span {
+            color: rgb(0, 174, 0);
+        }
+    }
+
+    .service__slide-phone {
+        margin-bottom: 3px;
+    }
+
+    .service__slide-email>span {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1890px) {
+        .articles-page__inner {
+            max-width: 1200px;
+        }
+
+        .articles__list {
+            gap: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1750px) {
+        .articles-page__inner {
+            max-width: 1100px;
+        }
+    }
+
+    @media screen and (max-width: 1550px) {
+        .articles-page__inner {
+            max-width: 1000px;
+        }
+
+        .articles__list {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    @media screen and (max-width: 1380px) {
+        .articles-page__inner {
+            max-width: 950px;
+        }
+
+        .articles__list {
+            gap: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1330px) {
+        .news-block {
+            display: none;
+        }
+
+        .articles-page__inner {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .articles__list {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .pagination {
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 1230px) {
+        .articles__list {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+    }
+
+    @media screen and (max-width: 930px) {
+        .articles__list {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .articles__item {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .articles-page__content {
+            padding: 0 45px 50px;
+        }
+
+        .articles-page__title {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .articles__list {
+            grid-template-columns: 1fr;
+        }
+
+        .service__item {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        .articles-page__content {
+            padding: 0 35px 40px;
+        }
+
+        .articles-page__title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+    }
+}

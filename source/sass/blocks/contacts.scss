@@ -1,0 +1,357 @@
+.contacts {
+    position: relative;
+    overflow: hidden;
+
+    &__content {
+        max-width: 1420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px 60px;
+    }
+
+    .mainly__bg {
+        top: -140px;
+        right: -180px;
+        height: 1000px;
+        width: 600px;
+        z-index: -1;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 100%;
+        margin: 0 0 40px;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px 50px;
+    }
+
+    // &__map {
+    //     width: 720px;
+    // }
+
+    iframe {
+        border-radius: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__list-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__name {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 140%;
+        margin: 0 0 12px;
+    }
+
+    &__desc {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+        transition: .3s;
+    }
+
+    &__item>a {
+        display: inline-block;
+    }
+
+    &__item:last-child>&__name {
+        margin-bottom: 20px;
+    }
+
+    &__item>a:hover {
+        color: #28859A;
+    }
+
+    .footer__social {
+        margin-bottom: 0;
+    }
+
+    .form__form {
+        align-self: flex-start;
+    }
+
+    .form__title {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 120%;
+        margin: 0 0 15px;
+    }
+
+    .form__text {
+        color: #9F9F9F;
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 120%;
+        margin: 0 0 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form__box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form__input.inner {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .custom-input input,
+    .custom-textarea textarea {
+        border-radius: 4px;
+        background: rgba(99, 98, 98, 0.4);
+        color: rgb(104, 101, 101);
+    }
+
+    .custom-input input {
+        height: 50px;
+    }
+
+    .custom-textarea textarea {
+        height: 100px;
+    }
+
+    .form__input,
+    .form__input-text,
+    .custom-input input,
+    .custom-input__label,
+    .custom-textarea textarea,
+    .custom-textarea__label {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: rgb(104, 101, 101);
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    .header__btn {
+        max-width: 100%;
+        display: block;
+    }
+
+    .form__agreement {
+        color: #9F9F9F;
+        font-family: Onest;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .form__sub-link {
+        color: #9F9F9F;
+        font-family: Onest;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 0;
+        display: inline;
+        text-decoration: underline;
+        max-width: 490px;
+        width: 100%;
+        transition: .2s;
+    }
+
+    .form__sub-link:hover {
+        opacity: 0.8;
+    }
+
+    @media screen and (max-width: 1700px) {
+        .mainly__bg {
+            right: -200px;
+        }
+    }
+
+    @media screen and (max-width: 1570px) {
+        .mainly__bg {
+            right: -230px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        &__content {
+            padding: 0 40px 0;
+            margin: 0 auto -10px;
+        }
+
+        &__inner {
+            flex-direction: column-reverse;
+        }
+
+        &__list {
+            flex-direction: column-reverse;
+        }
+
+        &__list-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .form__form {
+            max-width: 900px;
+        }
+
+        .form__title {
+            br {
+                display: none;
+            }
+        }
+
+        .form__input.inner {
+            max-width: 100%;
+        }
+
+        &__map {
+            padding: 0;
+            margin: 0 -50px 0 -45px;
+        }
+
+        iframe {
+            width: calc(100% + 200px);
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+        }
+    } 
+
+    @media screen and (max-width: 768px) {
+        &__content {
+            padding: 0 45px;
+        }
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .form__title {
+            font-size: 28px;
+        }
+
+        &__name {
+            font-size: 22px;
+        }
+
+        &__desc {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        .form__title {
+            font-size: 25px;
+        }
+
+        &__list-info {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        &__content {
+            padding: 0 20px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        .form__title {
+            font-size: 18px;
+        }
+
+        .form__text {
+            font-size: 14px;
+        }
+
+        &__map {
+            padding: 0;
+            margin: 0 -25px 0 -20px;
+        }
+
+        .form__input,
+        .form__input-text,
+        .custom-input input,
+        .custom-input__label,
+        .custom-textarea textarea,
+        .custom-textarea__label {
+            font-size: 14px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 14px;
+        }
+
+        .header__btn {
+            max-width: 100%;
+            display: block;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .form__agreement {
+            font-size: 13px;
+        }
+
+        .form__sub-link {
+            font-size: 13px;
+        }
+
+        &__list-info {
+            gap: 20px;
+        }
+
+        &__name {
+            font-size: 18px;
+        }
+
+        &__desc {
+            font-size: 14px;
+        }
+    }
+
+
+}

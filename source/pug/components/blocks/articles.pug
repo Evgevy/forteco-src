@@ -1,0 +1,51 @@
+mixin articles()
+    section.articles
+        .articles__bg 
+            img(src="img/sprite/bg-left.svg").articles__img-bg
+        .articles__content
+            h2.articles__title <span>Актуальные</span> статьи
+            .articles__slider.swiper-container
+                ul.articles__list.swiper-wrapper 
+                    li.articles__item.swiper-slide 
+                        a(href="#").articles__link-content
+                            .articles__image 
+                                img(src="img/content/art1.png" alt="Фото к статье")
+                            .articles__info 
+                                p.articles__date  02.10.2024
+                                p.articles__name Пневмопистолет для подкачки шин
+                                p.articles__desc Пистолет для подкачки шин – незаменимый инструмент для каждого автовладельца...
+                            .articles__more
+                                button(type="button").header__btn Подробнее
+                    li.articles__item.swiper-slide
+                        a(href="#").articles__link-content
+                            .articles__image 
+                                img(src="img/content/art2.png" alt="Фото к статье")
+                            .articles__info 
+                                p.articles__date  02.10.2024
+                                p.articles__name Электронная подкачка шин
+                                p.articles__desc Очень важно иметь возможность подкачать шины автомобиля быстро....
+                            .articles__more
+                                button(type="button").header__btn Подробнее
+                    li.articles__item.swiper-slide
+                        a(href="#").articles__link-content
+                            .articles__image 
+                                img(src="img/content/art3.png" alt="Фото к статье")
+                            .articles__info 
+                                p.articles__date  02.10.2024
+                                p.articles__name Компрессоры для покачки шин
+                                p.articles__desc Компрессоры для подкачки шин нужны всем автолюбителям. Устройство всегда...
+                            .articles__more
+                                button(type="button").header__btn Подробнее
+                    li.articles__item.swiper-slide
+                        a(href="#").articles__link-content
+                            .articles__image 
+                                img(src="img/content/art1.png" alt="Фото к статье")
+                            .articles__info 
+                                p.articles__date 02.10.2024
+                                p.articles__name Пневмопистолет для подкачки шин
+                                p.articles__desc Пистолет для подкачки шин – незаменимый инструмент для каждого автовладельца...
+                            .articles__more
+                                button(type="button").header__btn Подробнее
+            .swiper-button-next
+            .swiper-button-prev
+            a(href="#").mainly__link Смотреть все

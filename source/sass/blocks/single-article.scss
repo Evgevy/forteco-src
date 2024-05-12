@@ -1,0 +1,120 @@
+.single-article {
+    position: relative;
+    overflow: hidden;
+
+    &__content {
+        max-width: 1420px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px 60px;
+
+    }
+
+    .mainly__bg {
+        top: -140px;
+        right: -180px;
+        height: 1000px;
+        width: 600px;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 100%;
+        margin: 0 0 20px;
+    }
+
+    &__date {
+        color: rgb(159, 159, 159);
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 112%;
+        margin: 0 0 20px;
+    }
+
+    &__image {
+        max-width: 1280px;
+        margin-bottom: 40px;
+    }
+
+    &__image>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 2px solid #4b4b4b;
+    }
+
+    &__block-text>p {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0 0 30px;
+    }
+
+    &__block-text>p:last-child {
+        margin-bottom: 0;
+    }
+
+    &__block-text>h3 {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 100%;
+        margin: 50px 0 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__content {
+            padding: 0 45px 50px;
+        }
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        &__block-text>h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        &__block-text>p {
+            font-size: 16px;
+        
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        &__image {
+            height: 300px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    @media screen and (max-width: 390px) {
+        &__content {
+            padding: 0 20px 50px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__block-text>h3 {
+            font-size: 25px;
+        }
+
+        &__block-text>p {
+            font-size: 15px;
+        
+        }
+    }
+}

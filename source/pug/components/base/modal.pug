@@ -1,0 +1,11 @@
+mixin modal(mods, icon)
+  .modal(class=mods)&attributes(attributes)
+    .modal__wrapper
+      .modal__overlay(data-close-modal)
+      .modal__content
+        .popup__bg 
+          img(src="img/sprite/modal.svg")
+        if block
+          block
+        //button.btn-reset.modal__close-button(type="button" arial-label="Закрыть попап" data-close-modal)
+          +icon(icon.name, icon.width, icon.height)

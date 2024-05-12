@@ -1,0 +1,180 @@
+mixin view()
+    section.view
+        .progress__image-bg 
+            img(src="img/sprite/bg-left.svg").progress__img-content
+        .mainly__bg
+            img(src="img/sprite/bg-right.svg").mainly__img 
+        .view__content 
+            h1.view__title.view__title--mobile Пост подкачки шин ATIS 210
+            .view__inner
+                .view__sliders
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                a(href="img/content/slide1.png" data-fancybox="galary")
+                                    <img src="img/content/slide1.png" alt="Image 1" class="view__img">
+                            </div>
+                            <div class="swiper-slide">
+                                a(href="img/content/slide1.png" data-fancybox="galary")
+                                    <img src="img/content/slide1.png" alt="Image 2" class="view__img">
+                            </div>
+                            <div class="swiper-slide">
+                                a(href="img/content/slide1.png" data-fancybox="galary")
+                                    <img src="img/content/slide1.png" alt="Image 3" class="view__img">
+                            </div>
+                            <div class="swiper-slide">
+                                a(href="img/content/slide1.png" data-fancybox="galary")
+                                    <img src="img/content/slide1.png" alt="Image 3" class="view__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/content/slide1.png" alt="Image 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/content/slide1.png" alt="Image 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/content/slide1.png" alt="Image 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/content/slide1.png" alt="Image 4">
+                            </div>
+                        </div>
+                    </div>
+                .view__info 
+                    h1.view__title Пост подкачки шин ATIS 210
+                    .view__table 
+                        p.view__table-text Характеристики
+                        .view__lvl 
+                            p.view__lvl-text Тип монтажа
+                            p.view__lvl-text Настенный
+                        .view__lvl 
+                            p.view__lvl-text Степень влагозащиты
+                            p.view__lvl-text IP64
+                        .view__lvl 
+                            p.view__lvl-text Масса, кг
+                            p.view__lvl-text 13
+                        .view__lvl 
+                            p.view__lvl-text Класс точности манометра
+                            p.view__lvl-text 1
+                        .view__lvl 
+                            p.view__lvl-text Габаритные размеры (Ш×В×Г)
+                            p.view__lvl-text 400×500×235
+                    a(href="#").view__table-link Смотреть все характеристики
+                    button(type="button" data-open-modal="feedback").view__btn.header__btn Оставить заявку
+                    .view__questions 
+                        p.view__answer Появились вопросы? Звоните: <a href="tel:+78129462509">+7 (812) 946-25-09</a>
+            .view__accord 
+                .view__accord-item
+                    .view__name-box 
+                        p.view__name Комплектация
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="#2E2E2E" fill-opacity="0.7"/>
+                        <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="url(#paint0_linear_483_694)"/>
+                        <path d="M16 16L24 24L16 32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M32 16L24 24L32 32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_483_694" x1="-7.04" y1="30" x2="49.6654" y2="35.2959" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.015" stop-color="#05465D"/>
+                        <stop offset="0.52" stop-color="#2B91A7"/>
+                        <stop offset="1" stop-color="#227284"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    .view__desc-box 
+                        p.view__desc Пневмоатомат
+                        p.view__desc Выходной рукав (летний)
+                        p.view__desc Выходной рукав (зимний)
+                        p.view__desc Резервные шинные насадки выходного рукава  
+                        p.view__desc Лист защитный (комплект)
+                        p.view__desc Комплект крепежа
+                        p.view__desc Ключ дверцы пневмоавтомата
+                        p.view__desc Комплект монтажный, пневматический
+                        p.view__desc Паспорт пневмоавтомата
+                        p.view__desc Инструкция по эксплуатации
+                        p.view__desc Наклейка
+                        p.view__desc Защитный козырек
+                        p.view__desc Кронштейн для сматывания рукава
+                        p.view__desc Информационная консоль с цифровым табло
+                        p.view__desc Паспорт манометра с отметкой о первичной поверке 
+                .view__accord-item 
+                    .view__name-box 
+                        p.view__name Все характеристики
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="#2E2E2E" fill-opacity="0.7"/>
+                        <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="url(#paint0_linear_483_694)"/>
+                        <path d="M16 16L24 24L16 32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M32 16L24 24L32 32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_483_694" x1="-7.04" y1="30" x2="49.6654" y2="35.2959" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.015" stop-color="#05465D"/>
+                        <stop offset="0.52" stop-color="#2B91A7"/>
+                        <stop offset="1" stop-color="#227284"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    .view__desc-box 
+                        .view__table 
+                            .view__lvl 
+                                p.view__lvl-text Тип монтажа
+                                p.view__lvl-text Настенный
+                            .view__lvl 
+                                p.view__lvl-text Степень влагозащиты
+                                p.view__lvl-text IP64
+                            .view__lvl 
+                                p.view__lvl-text Масса, кг
+                                p.view__lvl-text 13
+                            .view__lvl 
+                                p.view__lvl-text Класс точности манометра
+                                p.view__lvl-text 1
+                            .view__lvl 
+                                p.view__lvl-text Габаритные размеры (Ш×В×Г)
+                                p.view__lvl-text 400×500×235
+                            .view__lvl 
+                                p.view__lvl-text Диапазон регулирования давления, МПа (атм, бар)
+                                p.view__lvl-text 0,05...0,40 (0,5 … 4,0)
+                            .view__lvl 
+                                p.view__lvl-text Погрешность регулировки давления, МПа (атм, бар)
+                                p.view__lvl-text 0,003 (0,03)
+                            .view__lvl 
+                                p.view__lvl-text Диапазон измерения манометра, МПа (атм, бар)
+                                p.view__lvl-text 0,02...0,6 (0,2 … 6)
+                            .view__lvl 
+                                p.view__lvl-text Давление на входе номинальное, МПа (атм, бар)
+                                p.view__lvl-text 0,6...0,8 (6 … 8)
+                            .view__lvl 
+                                p.view__lvl-text Давление на входе максимальное, МПа (атм, бар)
+                                p.view__lvl-text 1,0 (10)
+                            .view__lvl 
+                                p.view__lvl-text Потребляемая мощность (макс.), Вт
+                                p.view__lvl-text 1,0 (10)
+                .view__accord-item 
+                    .view__name-box 
+                        p.view__name Инструкция и схемы
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="#2E2E2E" fill-opacity="0.7"/>
+                        <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="url(#paint0_linear_483_694)"/>
+                        <path d="M16 16L24 24L16 32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M32 16L24 24L32 32" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_483_694" x1="-7.04" y1="30" x2="49.6654" y2="35.2959" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.015" stop-color="#05465D"/>
+                        <stop offset="0.52" stop-color="#2B91A7"/>
+                        <stop offset="1" stop-color="#227284"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>   
+                    .view__desc-box
+                        p.view__download-text ATIS 210 Инструкция.pdf
+                            a(href="" download).view__download Скачать 
+            .view__about 
+                p.view__name O модели
+                .view__about-text 
+                    p Новый ATIS 210 – выбор для тех, кто хочет заработать! Отличается от всех остальных наших продуктов, наличием видеомодуля. Вы можете разместить на нем свои рекламные видеоматериалы, специальные предложения и акции. Вы не просто предоставляете услугу по подкачке шин, а рекламируете свои товары и не только своим целевым клиентам, но и тем, кто просто заехал подкачать колеса своего автомобиля.
+                    p Посты подкачки шин серии ATIS полностью адаптированы для работы в условиях Российской Федерации, система микроклимата с датчиками внешней и внутренней температуры, встроенным в корпус обогревателем, позволяет работать нашему оборудованию в самых суровых климатических условиях. Пневмоавтомат оснащен светодиодной подсветкой, которая позволяет комфортно пользоваться услугой подкачки шин в темное время суток.
+                    p Настенный монтаж позволит расположить оборудование практически на любой стене здания и обеспечит удобный проезд по Вашей территории. В комплекте к пневмавтомату идет специальный кронштейн для смотки рукава и антивандальная нержавеющая накладка. Благодаря встроенному контроллеру и цифровой индикации, процесс подкачки шин интуитивно понятен и не требует поддержки со стороны персонала.

@@ -1,0 +1,29 @@
+mixin progress()
+    section.progress
+        .progress__image-bg 
+            img(src="img/sprite/bg-left.svg").progress__img-content
+        .progress__content
+            .progress__inner 
+                h2.progress__title Модели <span>повышенного</span> спроса
+                .progress__slider.swiper-container
+                    ul.progress__list.swiper-wrapper 
+                        li.progress__item.swiper-slide
+                            a(href="#").progress__link 
+                                .progress__info
+                                    p.progress__name Пост подкачки шин в термобоксе APSW700
+                                    img(src="img/content/model1.png").progress__img
+                            a(href="#").progress__btn Подробнее 
+                        li.progress__item.swiper-slide
+                            a(href="#").progress__link 
+                                .progress__info
+                                    p.progress__name Навесной пост подкачки шин серии АТIS
+                                    img(src="img/content/model2.png").progress__img
+                            a(href="#").progress__btn Подробнее  
+                        li.progress__item.swiper-slide
+                            a(href="#").progress__link 
+                                .progress__info
+                                    p.progress__name Пост подкачки шин серии АPS
+                                    img(src="img/content/model3.png").progress__img
+                            a(href="#").progress__btn Подробнее 
+                .swiper-button-next
+                .swiper-button-prev

@@ -1,0 +1,150 @@
+.popup--feedback {
+    position: relative;
+    z-index: 1;
+    /*&__content {
+        max-width: 520px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 9999;
+        padding: 50px 20px;
+        background: rgb(255, 255, 255);
+    }*/
+
+    /*&__close {
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+
+        svg {
+            path {
+                stroke: rgb(210, 0, 0);
+            }
+        }
+    }*/
+
+    .popup__title {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 120%;
+        margin: 0 0 12px 0;
+    }
+
+    .popup__text {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 120%;
+        margin: 0 0 20px;
+    }
+
+    .form__agreement {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .form__sub-link {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        display: inline;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        max-width: 490px;
+        width: 100%;
+        transition: .3s;
+    }
+
+    .form__sub-link:hover {
+        opacity: 0.8;
+    }
+
+    .custom-input input,
+    .custom-input__label,
+    .custom-textarea textarea,
+    .custom-textarea__label {
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        display: inline-block;
+        margin: 0 0 10px;
+    }
+
+    // .custom-input__label,
+    // .custom-textarea__label {
+    //     margin-top: 20px;
+    // }
+
+    .custom-input input,
+    .custom-textarea textarea {
+        border-radius: 4px;
+        background: rgba(9, 39, 48, 0.9) !important;
+        margin-bottom: 20px;
+    }
+
+    .custom-textarea textarea {
+        margin-bottom: 40px;
+    }
+
+    .custom-input input {
+        height: 50px !important;
+    }
+
+    .custom-input input::placeholder {
+        color: rgb(16, 70, 88);
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .custom-textarea textarea::placeholder {
+        color: rgb(16, 70, 88);
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .custom-input input {
+        height: 50px;
+    }
+
+    .custom-textarea textarea {
+        height: 100px;
+    }
+
+    .custom-textarea label {
+        height: auto;
+    }
+
+    .popup__btn {
+        max-width: 100%;
+        color: rgb(255, 255, 255);
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 10px;
+    }
+
+    .form__btn:hover {
+        background: rgb(0, 194, 0);
+    }
+
+    @media screen and (max-width: 420px) {
+        .popup__title {
+            font-size: 28px;
+        }
+    }
+}
